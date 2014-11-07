@@ -1,0 +1,1014 @@
+autostart = False
+version = 0.8.7
+[127.0.0.1:7200]
+    workingdir = working
+    udp = 10001
+    [[3725]]
+        image = /home/joel/Descargas/dynamips-0.2.8-RC7-x86_64-linux.bin
+        sparsemem = True
+    [[3640]]
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x60593ce8
+        sparsemem = True
+        chassis = 3640
+    [[Hub HUB1_A]]
+        1 = R1 f0/0
+        2 = b1 f0/0
+        3 = b5 f0/1
+        x = -346.119841047
+        y = -230.076118446
+        z = 1.0
+    [[ROUTER b4]]
+        model = 3725
+        console = 2031
+        aux = 2131
+        cnfg = configs/b4.cfg
+        f0/0 = HUB3_A 4
+        f0/1 = HUB4_A 1
+        slot1 = NM-16ESW
+        slot2 = NM-16ESW
+        symbol = EtherSwitch router
+        x = 62.1568542495
+        y = -236.139610307
+        z = 1.0
+    [[ROUTER b5]]
+        model = 3725
+        console = 2025
+        aux = 2125
+        cnfg = configs/b5.cfg
+        f0/1 = HUB1_A 3
+        slot1 = NM-16ESW
+        f1/0 = HUB3_A 1
+        symbol = EtherSwitch router
+        x = -206.169047558
+        y = -239.985281374
+        z = 1.0
+    [[ROUTER b6]]
+        model = 3725
+        console = 2035
+        aux = 2135
+        cnfg = configs/b6.cfg
+        f0/0 = HUB6_E 2
+        f0/1 = HUB7_E 1
+        slot1 = NM-16ESW
+        f1/0 = HUB8_E 1
+        symbol = EtherSwitch router
+        x = 772.116449178
+        y = -282.301081914
+        z = 1.0
+    [[ROUTER b1]]
+        model = 3725
+        console = 2026
+        aux = 2126
+        cnfg = configs/b1.cfg
+        f0/0 = HUB1_A 2
+        f0/1 = HUB2_A 1
+        slot1 = NM-16ESW
+        symbol = EtherSwitch router
+        x = -340.247258045
+        y = -447.742640687
+        z = 1.0
+    [[ROUTER b2]]
+        model = 3725
+        console = 2028
+        aux = 2128
+        cnfg = configs/b2.cfg
+        f0/1 = HUB2_A 2
+        slot1 = NM-16ESW
+        f1/0 = HUB3_A 3
+        symbol = EtherSwitch router
+        x = -86.5954544294
+        y = -343.286796564
+        z = 1.0
+    [[ROUTER b3]]
+        model = 3725
+        console = 2033
+        aux = 2133
+        cnfg = configs/b3.cfg
+        f0/0 = HUB2_A 3
+        f0/1 = HUB4_A 5
+        slot1 = NM-16ESW
+        slot2 = NM-16ESW
+        symbol = EtherSwitch router
+        x = 57.1740981922
+        y = -343.688816818
+        z = 1.0
+    [[Hub HUB2_A]]
+        1 = b1 f0/1
+        2 = b2 f0/1
+        3 = b3 f0/0
+        4 = NIO_udp:30004:127.0.0.1:20004
+        x = -93.6101730552
+        y = -446.272077939
+        z = 1.0
+    [[Hub HUB7_E]]
+        1 = b6 f0/1
+        2 = R5 f0/0
+        x = 760.202235616
+        y = -141.865007052
+        z = 1.0
+    [[Hub HUB3_A]]
+        1 = b5 f1/0
+        2 = R2 f0/0
+        3 = b2 f1/0
+        4 = b4 f0/0
+        x = -97.3431457505
+        y = -233.852813742
+        z = 1.0
+    [[Hub HUB4_A]]
+        1 = b4 f0/1
+        2 = R3 f0/0
+        3 = R4 f0/0
+        4 = NIO_udp:30000:127.0.0.1:20000
+        5 = b3 f0/1
+        x = 216.154328933
+        y = -238.171572875
+        z = 1.0
+    [[Hub HUB5_F]]
+        1 = R3 f1/0
+        2 = R6 f0/0
+        x = 443.418397644
+        y = -400.666088966
+        z = 1.0
+    [[FRSW FR5]]
+        x = -362.082827844
+        y = 170.247258045
+        z = 1.0
+    [[Hub HUB6_E]]
+        1 = R6 f1/0
+        2 = b6 f0/0
+        x = 607.46717088
+        y = -270.558441227
+        z = 1.0
+    [[ROUTER R4]]
+        model = 3640
+        console = 2104
+        aux = 2504
+        cnfg = configs/R4.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB4_A 3
+        slot1 = NM-1FE-TX
+        f1/0 = HUB9_M 1
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 220.343145751
+        y = -143.372583002
+        z = 1.0
+    [[ROUTER R5]]
+        model = 3640
+        console = 2105
+        aux = 2505
+        cnfg = configs/R5.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB7_E 2
+        slot1 = NM-1FE-TX
+        f1/0 = HUB9_M 2
+        slot2 = NM-1FE-TX
+        x = 581.778787338
+        y = -145.024386618
+        z = 1.0
+    [[ROUTER R6]]
+        model = 3640
+        console = 2106
+        aux = 2506
+        cnfg = configs/R6.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB5_F 2
+        slot1 = NM-1FE-TX
+        f1/0 = HUB6_E 1
+        slot2 = NM-1FE-TX
+        f2/0 = HUB9_M 3
+        x = 450.889393669
+        y = -275.399061661
+        z = 1.0
+    [[ROUTER R7]]
+        model = 3640
+        console = 2107
+        aux = 2507
+        cnfg = configs/R7.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB8_E 2
+        slot1 = NM-1FE-TX
+        x = 878.489465456
+        y = -408.600071787
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3640
+        console = 2119
+        aux = 2519
+        cnfg = configs/R1.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB1_A 1
+        slot1 = NM-1FE-TX
+        slot2 = NM-4T
+        s2/0 = FR5 1
+        x = -342.786796564
+        y = 0.688383541923
+        z = 4.0
+    [[ROUTER R2]]
+        model = 3640
+        console = 2102
+        aux = 2502
+        cnfg = configs/R2.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB3_A 2
+        slot1 = NM-1FE-TX
+        f1/0 = R8 f1/0
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = -96.5857864376
+        y = -51.8578643763
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3640
+        console = 2103
+        aux = 2503
+        cnfg = configs/R3.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB4_A 2
+        slot1 = NM-1FE-TX
+        f1/0 = HUB5_F 1
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 213.242640687
+        y = -402.188816818
+        z = 1.0
+        hx = 15.7421875
+        hy = -25.0
+    [[ROUTER R8]]
+        model = 3640
+        console = 2108
+        aux = 2508
+        cnfg = configs/R8.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB11_G 3
+        slot1 = NM-1FE-TX
+        f1/0 = R2 f1/0
+        slot2 = NM-1FE-TX
+        slot3 = NM-4T
+        s3/0 = FR5 4
+        x = 63.3279938492
+        y = -54.3330444827
+        z = 1.0
+    [[Hub HUB8_E]]
+        1 = b6 f1/0
+        2 = R7 f0/0
+        x = 877.581961293
+        y = -269.144227664
+        z = 1.0
+    [[Hub HUB9_M]]
+        1 = R4 f1/0
+        2 = R5 f1/0
+        3 = R6 f2/0
+        x = 447.661038332
+        y = -140.450793489
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = working
+    udp = 10101
+    [[3640]]
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x60593ce8
+        sparsemem = True
+        chassis = 3640
+    [[ROUTER R16]]
+        model = 3640
+        console = 2116
+        aux = 2516
+        cnfg = configs/R16.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB13_C 2
+        slot1 = NM-1FE-TX
+        f1/0 = HUB14_D 1
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 137.078210487
+        y = 412.735064736
+        z = 1.0
+    [[ROUTER R14]]
+        model = 3640
+        console = 2114
+        aux = 2514
+        cnfg = configs/R14.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = R11 f1/0
+        slot1 = NM-1FE-TX
+        f1/0 = HUB13_C 1
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 329.279220614
+        y = 265.899494937
+        z = 1.0
+    [[ROUTER R12]]
+        model = 3640
+        console = 2112
+        aux = 2512
+        cnfg = configs/R12.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB10_B 1
+        slot1 = NM-1FE-TX
+        f1/0 = HUB11_G 1
+        slot2 = NM-1FE-TX
+        f2/0 = HUB12_H 2
+        x = 565.879292401
+        y = 15.5269119346
+        z = 1.0
+        hx = 8.45252075051
+        hy = -33.4852813742
+    [[Hub HUB13_C]]
+        1 = R14 f1/0
+        2 = R16 f0/0
+        3 = R15 f0/0
+        4 = NIO_udp:30003:127.0.0.1:20003
+        x = 135.119841047
+        y = 266.842712474
+        z = 1.0
+    [[Hub HUB12_H]]
+        1 = R10 f1/0
+        2 = R12 f2/0
+        3 = R13 f0/0
+        5 = R11 f0/0
+        x = 460.388960393
+        y = 172.090403796
+        z = 1.0
+    [[Hub HUB14_D]]
+        1 = R16 f1/0
+        2 = NIO_udp:30005:127.0.0.1:20005
+        3 = NIO_udp:30006:127.0.0.1:20006
+        4 = R17 f0/0
+        x = -252.374675043
+        y = 419.577777211
+        z = 1.0
+    [[ROUTER R9]]
+        model = 3640
+        console = 2109
+        aux = 2509
+        cnfg = configs/R9.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB11_G 4
+        slot1 = NM-4T
+        s1/0 = FR5 3
+        slot2 = NM-1FE-TX
+        x = 150.504617358
+        y = 31.9756133823
+        z = 1.0
+    [[Hub HUB11_G]]
+        1 = R12 f1/0
+        2 = R10 f0/0
+        3 = R8 f0/0
+        4 = R9 f0/0
+        x = 306.239682094
+        y = -49.941125497
+        z = 1.0
+    [[ROUTER R13]]
+        model = 3640
+        console = 2113
+        aux = 2513
+        cnfg = configs/R13.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB12_H 3
+        slot1 = NM-1FE-TX
+        x = 685.394011027
+        y = 163.225396744
+        z = 1.0
+    [[Hub HUB10_B]]
+        1 = R12 f0/0
+        2 = NIO_udp:30002:127.0.0.1:20002
+        x = 717.775828745
+        y = -1.85786437633
+        z = 1.0
+[127.0.0.1:7206]
+    workingdir = working
+    udp = 10601
+    [[3640]]
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        sparsemem = True
+        chassis = 3640
+    [[ROUTER R17]]
+        model = 3640
+        console = 2123
+        aux = 2523
+        cnfg = configs/R17.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB14_D 4
+        slot1 = NM-1FE-TX
+        f1/0 = HUB15_I 1
+        x = -245.132034356
+        y = 294.783837971
+        z = 1.0
+    [[ROUTER R18]]
+        model = 3640
+        console = 2124
+        aux = 2524
+        cnfg = configs/R18.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB15_I 2
+        x = -607.170706323
+        y = 293.369624409
+        z = 1.0
+    [[Hub HUB15_I]]
+        1 = R17 f1/0
+        2 = R18 f0/0
+        x = -410.766594029
+        y = 302.198051533
+        z = 1.0
+[127.0.0.1:7207]
+    workingdir = working
+    udp = 10701
+    [[3640]]
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x60593ce8
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R11]]
+        model = 3640
+        console = 2129
+        aux = 2527
+        cnfg = configs/R11.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB12_H 5
+        slot1 = NM-1FE-TX
+        f1/0 = R14 f0/0
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 330.759451354
+        y = 159.568542495
+        z = 1.0
+    [[ROUTER R10]]
+        model = 3640
+        console = 2127
+        aux = 2525
+        cnfg = configs/R10.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB11_G 2
+        slot1 = NM-1FE-TX
+        f1/0 = HUB12_H 1
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 434.364573775
+        y = 43.7695526217
+        z = 1.0
+[127.0.0.1:7205]
+    workingdir = working
+    udp = 10501
+    [[3640]]
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x60593ce8
+        sparsemem = True
+        chassis = 3640
+    [[ROUTER R15]]
+        model = 3640
+        console = 2138
+        aux = 2538
+        cnfg = configs/R15.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = HUB13_C 3
+        slot1 = NM-4T
+        s1/0 = FR5 2
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        x = 140.972654789
+        y = 142.129942316
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    workdir = working
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "s2/0"
+        x = 31.1338519584
+        y = 61.9564449305
+        interface = R1 s2/0
+        color = "#3c3c3c"
+    [[NOTE 2]]
+        text = "f0/0"
+        x = 32.943734107
+        y = -17.9999604268
+        interface = R1 f0/0
+        color = "#3c3c3c"
+    [[NOTE 3]]
+        text = "1"
+        x = -3.55180642339
+        y = 21.9711480175
+        interface = HUB10_B 1
+        color = "#3c3c3c"
+    [[NOTE 4]]
+        text = "f0/0"
+        x = -6.99666956138
+        y = 22.5161627631
+        interface = R13 f0/0
+        color = "#3c3c3c"
+    [[NOTE 5]]
+        text = "3"
+        x = 36.0708361523
+        y = -23.9999372779
+        interface = HUB9_M 3
+        color = "#3c3c3c"
+    [[NOTE 6]]
+        text = "2"
+        x = 75.997633234
+        y = 16.435127199
+        interface = HUB9_M 2
+        color = "#3c3c3c"
+    [[NOTE 7]]
+        text = "1"
+        x = -3.99642798652
+        y = 16.5345543183
+        interface = HUB9_M 1
+        color = "#3c3c3c"
+    [[NOTE 8]]
+        text = "4"
+        x = 1.00852643301
+        y = 35.3803193372
+        interface = HUB11_G 4
+        color = "#3c3c3c"
+    [[NOTE 9]]
+        text = "3"
+        x = -3.99914478842
+        y = 16.2615648967
+        interface = HUB11_G 3
+        color = "#3c3c3c"
+    [[NOTE 10]]
+        text = "1"
+        x = 74.5337674701
+        y = 26.7307392364
+        interface = HUB11_G 1
+        color = "#3c3c3c"
+    [[NOTE 11]]
+        text = "s1/0"
+        x = -5.20846471366
+        y = 33.836943196
+        interface = R9 s1/0
+        color = "#3c3c3c"
+    [[NOTE 12]]
+        text = "f0/0"
+        x = 67.991473567
+        y = 2.61968066283
+        interface = R9 f0/0
+        color = "#3c3c3c"
+    [[NOTE 13]]
+        text = "1"
+        x = -3.95249404499
+        y = 14.0510978513
+        interface = HUB8_E 1
+        color = "#3c3c3c"
+    [[NOTE 14]]
+        text = "s3/0"
+        x = -1.65541633605
+        y = 41.9750373861
+        interface = R8 s3/0
+        color = "#3c3c3c"
+    [[NOTE 15]]
+        text = "f0/0"
+        x = 72.9991447884
+        y = 21.7384351033
+        interface = R8 f0/0
+        color = "#3c3c3c"
+    [[NOTE 16]]
+        text = "f1/0"
+        x = -6.99520935708
+        y = 22.6190545078
+        interface = R8 f1/0
+        color = "#3c3c3c"
+    [[NOTE 17]]
+        text = "f1/0"
+        x = 72.9926282581
+        y = 21.2320904928
+        interface = R3 f1/0
+        color = "#3c3c3c"
+    [[NOTE 18]]
+        text = "f0/0"
+        x = 34.4954204592
+        y = 61.9720366963
+        interface = R3 f0/0
+        color = "#3c3c3c"
+    [[NOTE 19]]
+        text = "f1/0"
+        x = 72.9952093571
+        y = 21.3809454922
+        interface = R2 f1/0
+        color = "#3c3c3c"
+    [[NOTE 20]]
+        text = "f0/0"
+        x = 33.4771364634
+        y = -17.9971541587
+        interface = R2 f0/0
+        color = "#3c3c3c"
+    [[NOTE 21]]
+        text = "f2/0"
+        x = 32.9291638477
+        y = 61.9999372779
+        interface = R6 f2/0
+        color = "#3c3c3c"
+    [[NOTE 22]]
+        text = "f1/0"
+        x = 72.9989443517
+        y = 21.7093958849
+        interface = R6 f1/0
+        color = "#3c3c3c"
+    [[NOTE 23]]
+        text = "f0/0"
+        x = 31.6383770673
+        y = -17.9768180698
+        interface = R6 f0/0
+        color = "#3c3c3c"
+    [[NOTE 24]]
+        text = "f1/0"
+        x = -6.99763323399
+        y = 21.564872801
+        interface = R5 f1/0
+        color = "#3c3c3c"
+    [[NOTE 25]]
+        text = "f0/0"
+        x = 72.9950978146
+        y = 21.3737805494
+        interface = R5 f0/0
+        color = "#3c3c3c"
+    [[NOTE 26]]
+        text = "f1/0"
+        x = 72.9964279865
+        y = 21.4654456817
+        interface = R4 f1/0
+        color = "#3c3c3c"
+    [[NOTE 27]]
+        text = "f0/0"
+        x = 32.5282753735
+        y = -17.9972183517
+        interface = R4 f0/0
+        color = "#3c3c3c"
+    [[NOTE 28]]
+        text = "1"
+        x = -3.99894435167
+        y = 16.2906041151
+        interface = HUB6_E 1
+        color = "#3c3c3c"
+    [[NOTE 29]]
+        text = "2"
+        x = 75.9848583621
+        y = 14.8994993112
+        interface = HUB6_E 2
+        color = "#3c3c3c"
+    [[NOTE 30]]
+        text = "3"
+        x = 75.9966695614
+        y = 15.4838372369
+        interface = HUB12_H 3
+        color = "#3c3c3c"
+    [[NOTE 31]]
+        text = "2"
+        x = 58.5084905654
+        y = -17.0661133559
+        interface = HUB12_H 2
+        color = "#3c3c3c"
+    [[NOTE 32]]
+        text = "3"
+        x = 63.7084647137
+        y = 11.663056804
+        interface = FR5 3
+        color = "#3c3c3c"
+    [[NOTE 33]]
+        text = "4"
+        x = 60.1554163361
+        y = 3.52496261393
+        interface = FR5 4
+        color = "#3c3c3c"
+    [[NOTE 34]]
+        text = "1"
+        x = 27.3661480416
+        y = -16.4564449305
+        interface = FR5 1
+        color = "#3c3c3c"
+    [[NOTE 35]]
+        text = "2"
+        x = 65.2754493585
+        y = 19.2675505517
+        interface = FR5 2
+        color = "#3c3c3c"
+    [[NOTE 36]]
+        text = "1"
+        x = -3.99262825808
+        y = 16.7679095072
+        interface = HUB5_F 1
+        color = "#3c3c3c"
+    [[NOTE 37]]
+        text = "2"
+        x = 37.3616229327
+        y = 55.9768180698
+        interface = HUB5_F 2
+        color = "#3c3c3c"
+    [[NOTE 38]]
+        text = "2"
+        x = 34.5045795408
+        y = -23.9720366963
+        interface = HUB4_A 2
+        color = "#3c3c3c"
+    [[NOTE 39]]
+        text = "3"
+        x = 36.4717246265
+        y = 55.9972183517
+        interface = HUB4_A 3
+        color = "#3c3c3c"
+    [[NOTE 40]]
+        text = "5"
+        x = 1.37383717027
+        y = -4.02570467397
+        interface = HUB4_A 5
+        color = "#3c3c3c"
+    [[NOTE 41]]
+        text = "1"
+        x = -3.93301397958
+        y = 18.3139564617
+        interface = HUB4_A 1
+        color = "#3c3c3c"
+    [[NOTE 42]]
+        text = "4"
+        x = 75.9999666623
+        y = 16.0516431452
+        interface = HUB4_A 4
+        color = "#3c3c3c"
+    [[NOTE 43]]
+        text = "3"
+        x = 36.9278310404
+        y = -23.9892376717
+        interface = HUB13_C 3
+        color = "#3c3c3c"
+    [[NOTE 44]]
+        text = "1"
+        x = 75.9860118766
+        y = 17.0577590494
+        interface = HUB13_C 1
+        color = "#3c3c3c"
+    [[NOTE 45]]
+        text = "2"
+        x = 35.7256988775
+        y = 55.9990594751
+        interface = HUB13_C 2
+        color = "#3c3c3c"
+    [[NOTE 46]]
+        text = "4"
+        x = -2.34587465112
+        y = 27.3839315371
+        interface = HUB13_C 4
+        color = "#3c3c3c"
+    [[NOTE 47]]
+        text = "2"
+        x = 35.5228635366
+        y = 55.9971541587
+        interface = HUB3_A 2
+        color = "#3c3c3c"
+    [[NOTE 48]]
+        text = "3"
+        x = 36.0971964729
+        y = -23.9998819104
+        interface = HUB3_A 3
+        color = "#3c3c3c"
+    [[NOTE 49]]
+        text = "1"
+        x = -3.99737340571
+        y = 16.4583891841
+        interface = HUB3_A 1
+        color = "#3c3c3c"
+    [[NOTE 50]]
+        text = "4"
+        x = 75.975539333
+        y = 17.3986618723
+        interface = HUB3_A 4
+        color = "#3c3c3c"
+    [[NOTE 51]]
+        text = "1"
+        x = 36.4255078374
+        y = -23.9977367245
+        interface = HUB7_E 1
+        color = "#3c3c3c"
+    [[NOTE 52]]
+        text = "2"
+        x = -3.9950978146
+        y = 16.6262194506
+        interface = HUB7_E 2
+        color = "#3c3c3c"
+    [[NOTE 53]]
+        text = "f2/0"
+        x = 10.4915094346
+        y = 55.0661133559
+        interface = R12 f2/0
+        color = "#3c3c3c"
+    [[NOTE 54]]
+        text = "f1/0"
+        x = -6.94798103248
+        y = 9.85504720123
+        interface = R12 f1/0
+        color = "#3c3c3c"
+    [[NOTE 55]]
+        text = "f0/0"
+        x = 72.5518064234
+        y = 16.0288519825
+        interface = R12 f0/0
+        color = "#3c3c3c"
+    [[NOTE 56]]
+        text = "s1/0"
+        x = -6.77544935846
+        y = 26.2324494483
+        interface = R15 s1/0
+        color = "#3c3c3c"
+    [[NOTE 57]]
+        text = "f0/0"
+        x = 32.0721689596
+        y = 61.9892376717
+        interface = R15 f0/0
+        color = "#3c3c3c"
+    [[NOTE 58]]
+        text = "f1/0"
+        x = -6.98601187657
+        y = 20.9422409506
+        interface = R14 f1/0
+        color = "#3c3c3c"
+    [[NOTE 59]]
+        text = "f0/0"
+        x = 33.2743011225
+        y = -17.9990594751
+        interface = R16 f0/0
+        color = "#3c3c3c"
+    [[NOTE 60]]
+        text = "1"
+        x = -3.98900804154
+        y = 16.9376757723
+        interface = HUB2_A 1
+        color = "#3c3c3c"
+    [[NOTE 61]]
+        text = "4"
+        x = 75.9993488347
+        y = 15.7717615254
+        interface = HUB2_A 4
+        color = "#3c3c3c"
+    [[NOTE 62]]
+        text = "3"
+        x = 67.4679942009
+        y = 40.6934270804
+        interface = HUB2_A 3
+        color = "#3c3c3c"
+    [[NOTE 63]]
+        text = "2"
+        x = 34.7388189551
+        y = 55.9801128359
+        interface = HUB2_A 2
+        color = "#3c3c3c"
+    [[NOTE 64]]
+        text = "f0/1"
+        x = 60.1261628297
+        y = 43.525704674
+        interface = b3 f0/1
+        color = "#3c3c3c"
+    [[NOTE 65]]
+        text = "f0/0"
+        x = -5.96799420088
+        y = -1.19342708036
+        interface = b3 f0/0
+        color = "#3c3c3c"
+    [[NOTE 66]]
+        text = "f1/0"
+        x = 25.4028035271
+        y = 63.4998819104
+        interface = b2 f1/0
+        color = "#3c3c3c"
+    [[NOTE 67]]
+        text = "f0/1"
+        x = 26.7611810449
+        y = -16.4801128359
+        interface = b2 f0/1
+        color = "#3c3c3c"
+    [[NOTE 68]]
+        text = "f0/1"
+        x = 65.4890080415
+        y = 22.5623242277
+        interface = b1 f0/1
+        color = "#3c3c3c"
+    [[NOTE 69]]
+        text = "f0/0"
+        x = 26.3805009861
+        y = 63.4903078009
+        interface = b1 f0/0
+        color = "#3c3c3c"
+    [[NOTE 70]]
+        text = "f1/0"
+        x = 65.452494045
+        y = 25.4489021487
+        interface = b6 f1/0
+        color = "#3c3c3c"
+    [[NOTE 71]]
+        text = "f0/1"
+        x = 25.0744921626
+        y = 63.4977367245
+        interface = b6 f0/1
+        color = "#3c3c3c"
+    [[NOTE 72]]
+        text = "f0/0"
+        x = -14.4848583621
+        y = 24.6005006888
+        interface = b6 f0/0
+        color = "#3c3c3c"
+    [[NOTE 73]]
+        text = "f1/0"
+        x = 65.4973734057
+        y = 23.0416108159
+        interface = b5 f1/0
+        color = "#3c3c3c"
+    [[NOTE 74]]
+        text = "f0/1"
+        x = -14.4930746758
+        y = 24.2442969664
+        interface = b5 f0/1
+        color = "#3c3c3c"
+    [[NOTE 75]]
+        text = "f0/1"
+        x = 65.4330139796
+        y = 21.1860435383
+        interface = b4 f0/1
+        color = "#3c3c3c"
+    [[NOTE 76]]
+        text = "f0/0"
+        x = -14.475539333
+        y = 22.1013381277
+        interface = b4 f0/0
+        color = "#3c3c3c"
+    [[NOTE 77]]
+        text = "1"
+        x = 36.056265893
+        y = 55.9999604268
+        interface = HUB1_A 1
+        color = "#3c3c3c"
+    [[NOTE 78]]
+        text = "2"
+        x = 35.1194990139
+        y = -23.9903078009
+        interface = HUB1_A 2
+        color = "#3c3c3c"
+    [[NOTE 79]]
+        text = "3"
+        x = 75.9930746758
+        y = 15.2557030336
+        interface = HUB1_A 3
+        color = "#3c3c3c"
+    [[Cloud B]]
+        symbol = Host
+        x = 275.798556597
+        y = 541.842279199
+        z = 1.0
+    [[Cloud Internet]]
+        x = 829.839320605
+        y = -90.1543289325
+        z = 1.0
+    [[Cloud Host_A]]
+        symbol = Host
+        x = 643.494082814
+        y = 72.3233764909
+        z = 1.0
+    [[NOTE 80]]
+        text = "NIO_udp:30004:127.0.0.1:20004"
+        x = -7.49934883468
+        y = 29.7282384746
+        interface = Host_C NIO_udp:30004:127.0.0.1:20004
+        color = "#3c3c3c"
+    [[Cloud Host_C]]
+        symbol = Host
+        x = 96.1934341757
+        y = -460.835136523
+        z = 1.0
+        connections = HUB2_A:4:NIO_udp:30004:127.0.0.1:20004
+    [[Cloud Host_B]]
+        symbol = Host
+        x = -520.403679018
+        y = 408.906204335
+        z = 1.0
+        connections = HUB14_D:3:NIO_udp:30006:127.0.0.1:20006
+    [[Cloud FTPServer]]
+        symbol = Host
+        x = 707.133693121
+        y = -98.7964645564
+        z = 1.0
+        connections = HUB10_B:2:NIO_udp:30002:127.0.0.1:20002
+    [[NOTE 81]]
+        text = "NIO_udp:30000:127.0.0.1:20000"
+        x = -7.49996666231
+        y = 29.4483568548
+        interface = WebServer NIO_udp:30000:127.0.0.1:20000
+        color = "#3c3c3c"
+    [[Cloud WebServer]]
+        symbol = Host
+        x = 328.124458405
+        y = -251.531529292
+        z = 1.0
+        connections = HUB4_A:4:NIO_udp:30000:127.0.0.1:20000
+    [[NOTE 82]]
+        text = "NIO_udp:30003:127.0.0.1:20003"
+        x = 70.8458746511
+        y = 18.1160684629
+        interface = TelServer NIO_udp:30003:127.0.0.1:20003
+        color = "#3c3c3c"
+    [[Cloud TelServer]]
+        symbol = Host
+        x = -42.3994949361
+        y = 307.082827844
+        z = 1.0
+        connections = HUB14_D:2:NIO_udp:30005:127.0.0.1:20005 HUB13_C:4:NIO_udp:30003:127.0.0.1:20003
