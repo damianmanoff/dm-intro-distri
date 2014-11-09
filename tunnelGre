@@ -1,0 +1,30 @@
+#R13 
+configure terminal
+interface Tunnel10
+ip address 192.168.2.6 255.255.255.252 #aca va una de las ips q sobraron
+tunnel source 10.61.6.196 #Verificar cual es la del port serial o la otra
+tunnel destination 10.61.7.129
+end
+
+
+#R7
+configure terminal
+interface Tunnel30
+ip address 192.168.2.6 255.255.255.252 #aca va una de las ips q sobraron
+tunnel source 10.61.7.129 #Verificar cual es la del port serial o la otra
+tunnel destination 10.61.6.196
+end
+
+#R13
+ip route 172.16.3.0 255.255.255.0 tunnel 10 192.168.2.5
+end
+
+#R7
+ip route 172.16.2.0 255.255.255.0 tunnel 30 192.168.2.6
+end
+
+#R13
+interface Tunnel10
+tunnel mode ipip
+
+

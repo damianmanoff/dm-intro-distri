@@ -4,7 +4,7 @@ version = 0.8.7
     workingdir = working
     udp = 10001
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         chassis = 3640
@@ -160,8 +160,8 @@ version = 0.8.7
         slot1 = NM-1FE-TX
         slot2 = NM-4T
         s2/0 = RB s1/0
-        x = 886.97474683
-        y = -162.526911934
+        x = 912.430590953
+        y = 39.7056274852
         z = 1.0
     [[ROUTER R1]]
         model = 3640
@@ -254,7 +254,7 @@ version = 0.8.7
     workingdir = working
     udp = 10101
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         chassis = 3640
@@ -340,7 +340,7 @@ version = 0.8.7
     workingdir = working
     udp = 10601
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         chassis = 3640
@@ -376,7 +376,7 @@ version = 0.8.7
     workingdir = working
     udp = 10701
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         ghostios = True
@@ -388,7 +388,7 @@ version = 0.8.7
         4 = access 1 R13 f0/0
         5 = access 1 R11 f0/0
         x = 467.960028204
-        y = 162.190908859
+        y = 163.605122421
         z = 1.0
         hx = 9.59375
         hy = -25.0
@@ -424,7 +424,7 @@ version = 0.8.7
     workingdir = working
     udp = 10501
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         chassis = 3640
@@ -446,7 +446,7 @@ version = 0.8.7
     workingdir = working
     udp = 10801
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         ghostios = True
@@ -563,7 +563,7 @@ version = 0.8.7
     workingdir = working
     udp = 10901
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604f1484
         sparsemem = True
         ghostios = True
@@ -577,8 +577,8 @@ version = 0.8.7
         f0/0 = RC f0/0
         slot1 = NM-4T
         s1/0 = R7 s2/0
-        x = 818.356564548
-        y = 71.3380951166
+        x = 809.871283174
+        y = 157.605122421
         z = 1.0
     [[ROUTER RA]]
         model = 3640
@@ -589,8 +589,8 @@ version = 0.8.7
         f0/0 = RC f1/0
         slot1 = NM-4T
         s1/0 = R13 s2/0
-        x = 821.184991673
-        y = 225.487373415
+        x = 842.398195109
+        y = 344.281312654
         z = 1.0
     [[ROUTER RC]]
         model = 3640
@@ -601,8 +601,8 @@ version = 0.8.7
         f0/0 = RB f0/0
         slot1 = NM-1FE-TX
         f1/0 = RA f0/0
-        x = 917.351513914
-        y = 147.705627485
+        x = 903.20937829
+        y = 249.529003976
         z = 1.0
 [GNS3-DATA]
     configs = configs
