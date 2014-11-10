@@ -1,0 +1,33 @@
+Nov 10 11:06:43.405 C3600_BOOT: starting instance (CPU0 PC=0xffffffffbfc00000,idle_pc=0x0,JIT on)
+Nov 10 11:06:43.405 C3600_STOP: stopping simulation.
+Nov 10 11:06:43.405 CPU0: CPU_STATE: Halting CPU (old state=2)...
+Nov 10 11:06:43.606 VM: shutdown procedure engaged.
+Nov 10 11:06:43.606 VM_OBJECT: Shutdown of object "clpd6729"
+Nov 10 11:06:43.606 VM_OBJECT: Shutdown of object "ns16552"
+Nov 10 11:06:43.606 DEVICE: Removal of device ns16552, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.606 VM_OBJECT: Shutdown of object "rom"
+Nov 10 11:06:43.606 DEVICE: Removal of device rom, fd=-1, host_addr=0x0, flags=2
+Nov 10 11:06:43.606 VM_OBJECT: Shutdown of object "ram"
+Nov 10 11:06:43.606 DEVICE: Removal of device ram, fd=53, host_addr=0x7f4b14000000, flags=2
+Nov 10 11:06:43.606 MMAP: unmapping of device 'ram', fd=53, host_addr=0x7f4b14000000, len=0x8000000
+Nov 10 11:06:43.610 VM_OBJECT: Shutdown of object "gt64010"
+Nov 10 11:06:43.610 DEVICE: Removal of device gt64010, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.610 VM_OBJECT: Shutdown of object "io_fpga"
+Nov 10 11:06:43.610 DEVICE: Removal of device io_fpga, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.610 VM_OBJECT: Shutdown of object "zero"
+Nov 10 11:06:43.610 DEVICE: Removal of device zero, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.610 VM_OBJECT: Shutdown of object "nvram"
+Nov 10 11:06:43.610 DEVICE: Removal of device nvram, fd=52, host_addr=0x7f4b2e0b8000, flags=9
+Nov 10 11:06:43.638 MMAP: unmapping of device 'nvram', fd=52, host_addr=0x7f4b2e0b8000, len=0x20000
+Nov 10 11:06:43.639 VM_OBJECT: Shutdown of object "bootflash"
+Nov 10 11:06:43.639 DEVICE: Removal of device bootflash, fd=51, host_addr=0x7f4b2e0d8000, flags=1
+Nov 10 11:06:43.639 MMAP: unmapping of device 'bootflash', fd=51, host_addr=0x7f4b2e0d8000, len=0x800000
+Nov 10 11:06:43.639 VM_OBJECT: Shutdown of object "remote_ctrl"
+Nov 10 11:06:43.639 DEVICE: Removal of device remote_ctrl, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.639 VM: removing PCI busses.
+Nov 10 11:06:43.639 DEVICE: Removal of device pci_io, fd=-1, host_addr=0x0, flags=0
+Nov 10 11:06:43.639 VM: deleting VTTY.
+Nov 10 11:06:43.639 VM: deleting system CPUs.
+Nov 10 11:06:43.639 CPU0: CPU_STATE: Halting CPU (old state=1)...
+Nov 10 11:06:43.639 VM: shutdown procedure completed.
+Nov 10 11:06:43.639 VM: trying to shutdown an inactive VM.
