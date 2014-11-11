@@ -8,14 +8,6 @@ version = 0.8.7
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
-    [[ETHSW SW13_C]]
-        1 = access 1 NIO_udp:30003:127.0.0.1:20003
-        2 = access 1 R14 f1/0
-        3 = access 1 R16 f0/0
-        4 = access 1 R15 f0/0
-        x = 138.448268172
-        y = 276.742207411
-        z = 1.0
     [[ETHSW SW10_B]]
         1 = access 1 NIO_udp:30002:127.0.0.1:20002
         2 = access 1 R12 f0/0
@@ -238,11 +230,11 @@ version = 0.8.7
         z = 1.0
     [[ETHSW SW14_D]]
         1 = access 1 NIO_udp:30006:127.0.0.1:20006
-        2 = access 1 NIO_udp:30005:127.0.0.1:20005
-        3 = access 1 R17 f0/0
+        2 = access 1 R17 f0/0
+        3 = access 1 NIO_udp:30005:127.0.0.1:20005
         4 = access 1 R16 f1/0
-        x = -240.560966544
-        y = 413.920922961
+        x = -241.975180106
+        y = 423.820417898
         z = 1.0
     [[ETHSW SW7_E]]
         1 = access 1 R5 f0/0
@@ -350,7 +342,7 @@ version = 0.8.7
         aux = 2523
         cnfg = configs/R17.cfg
         slot0 = NM-1FE-TX
-        f0/0 = SW14_D 3
+        f0/0 = SW14_D 2
         slot1 = NM-1FE-TX
         f1/0 = SW15_I 2
         x = -245.132034356
@@ -428,13 +420,21 @@ version = 0.8.7
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
+    [[ETHSW SW13_C]]
+        1 = access 1 R15 f0/0
+        2 = access 1 R14 f1/0
+        3 = access 1 R16 f0/0
+        4 = access 1 NIO_udp:30003:127.0.0.1:20003
+        x = 137.034054609
+        y = 278.156420973
+        z = 1.0
     [[ROUTER R15]]
         model = 3640
         console = 2138
         aux = 2538
         cnfg = configs/R15.cfg
         slot0 = NM-1FE-TX
-        f0/0 = SW13_C 4
+        f0/0 = SW13_C 1
         slot1 = NM-4T
         s1/0 = FR3 2
         slot2 = NM-1FE-TX
@@ -646,7 +646,7 @@ version = 0.8.7
         connections = SW4_A:5:NIO_udp:30000:127.0.0.1:20000
     [[Cloud TelServer]]
         symbol = Host
-        x = -42.3994949361
-        y = 307.082827844
+        x = -49.470562748
+        y = 292.94069222
         z = 1.0
-        connections = SW14_D:2:NIO_udp:30005:127.0.0.1:20005 SW13_C:1:NIO_udp:30003:127.0.0.1:20003
+        connections = SW14_D:3:NIO_udp:30005:127.0.0.1:20005 SW13_C:4:NIO_udp:30003:127.0.0.1:20003
