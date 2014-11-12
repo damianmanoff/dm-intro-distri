@@ -179,7 +179,7 @@ version = 0.8.7
         f1/0 = R8 f1/0
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = -96.5857864376
+        x = -98.0
         y = -51.8578643763
         z = 1.0
     [[ROUTER R3]]
@@ -615,12 +615,6 @@ version = 0.8.7
         x = 275.798556597
         y = 541.842279199
         z = 1.0
-    [[Cloud FTPServer]]
-        symbol = Host
-        x = 707.133693121
-        y = -98.7964645564
-        z = 1.0
-        connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
     [[Cloud Host_A]]
         symbol = Host
         x = 466.717387517
@@ -639,6 +633,12 @@ version = 0.8.7
         y = 408.906204335
         z = 1.0
         connections = SW16:4:NIO_udp:30006:127.0.0.1:20006
+    [[Cloud FTPServer]]
+        symbol = Host
+        x = 707.133693121
+        y = -98.7964645564
+        z = 1.0
+        connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
     [[Cloud WebServer]]
         symbol = Host
         x = 328.124458405
