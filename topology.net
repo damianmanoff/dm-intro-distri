@@ -112,7 +112,7 @@ version = 0.8.7
         f1/0 = SW9_M 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 220.343145751
+        x = 224.585786438
         y = -143.372583002
         z = 1.0
     [[ROUTER R5]]
@@ -536,8 +536,8 @@ version = 0.8.7
         f0/0 = SW3_A 3
         f0/1 = SW4_A 4
         symbol = ethernet_switch
-        x = 51.8528137423
-        y = -236.960461481
+        x = 54.681240867
+        y = -234.132034356
         z = 1.0
     [[ETHSW SW2_A]]
         1 = access 1 b1 f0/1
@@ -615,6 +615,12 @@ version = 0.8.7
         x = 275.798556597
         y = 541.842279199
         z = 1.0
+    [[Cloud FTPServer]]
+        symbol = Host
+        x = 707.133693121
+        y = -98.7964645564
+        z = 1.0
+        connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
     [[Cloud Host_A]]
         symbol = Host
         x = 466.717387517
@@ -633,12 +639,6 @@ version = 0.8.7
         y = 408.906204335
         z = 1.0
         connections = SW16:4:NIO_udp:30006:127.0.0.1:20006
-    [[Cloud FTPServer]]
-        symbol = Host
-        x = 707.133693121
-        y = -98.7964645564
-        z = 1.0
-        connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
     [[Cloud WebServer]]
         symbol = Host
         x = 328.124458405
@@ -650,4 +650,4 @@ version = 0.8.7
         x = -49.470562748
         y = 292.94069222
         z = 1.0
-        connections = SW16:3:NIO_udp:30005:127.0.0.1:20005 SW13_C:4:NIO_udp:30003:127.0.0.1:20003
+        connections = SW13_C:4:NIO_udp:30003:127.0.0.1:20003 SW16:3:NIO_udp:30005:127.0.0.1:20005
