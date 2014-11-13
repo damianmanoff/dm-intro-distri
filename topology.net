@@ -4,22 +4,22 @@ version = 0.8.7
     workingdir = working
     udp = 10001
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
     [[ETHSW SW10_B]]
         1 = access 1 NIO_udp:30002:127.0.0.1:20002
         2 = access 1 R12 f0/0
-        x = 708.376333808
-        y = 15.1126983722
+        x = 711.204760933
+        y = -86.7106781187
         z = 1.0
     [[ETHSW SW9_M]]
         1 = access 1 R6 f2/0
         2 = access 1 R4 f1/0
         3 = access 1 R5 f1/0
-        x = 442.504184082
-        y = -136.208152802
+        x = 475.031096017
+        y = -240.859956418
         z = 1.0
     [[FRSW FR3]]
         0:154 = 2:151
@@ -31,8 +31,8 @@ version = 0.8.7
         0 = FR4 2
         1 = FR6 1
         2 = R15 s1/0
-        x = -463.906204335
-        y = 233.886868352
+        x = -775.033188057
+        y = 208.431024229
         z = 1.0
     [[FRSW FR2]]
         0:152 = 3:915
@@ -49,16 +49,16 @@ version = 0.8.7
         1 = FR6 3
         2 = R8 s3/0
         3 = R9 s1/0
-        x = -192.37720036
-        y = 136.306132548
+        x = -410.166088965
+        y = 105.193434176
         z = 1.0
     [[FRSW FR1]]
         0:152 = 1:156
         1:156 = 0:152
         0 = FR2 0
         1 = FR6 2
-        x = -338.041197284
-        y = 64.1812408671
+        x = -442.6930009
+        y = -34.813708499
         z = 1.0
     [[FRSW FR6]]
         0:86 = 3:82
@@ -73,8 +73,8 @@ version = 0.8.7
         1 = FR3 1
         2 = FR1 1
         3 = FR2 1
-        x = -472.39148571
-        y = 133.477705423
+        x = -755.234198185
+        y = 20.3406204332
         z = 1.0
     [[FRSW FR5]]
         0:85 = 1:18
@@ -85,8 +85,8 @@ version = 0.8.7
         1:115 = 0:155
         0 = FR4 0
         1 = R1 s2/0
-        x = -562.901153701
-        y = 7.61269837219
+        x = -760.891052433
+        y = -105.524386618
         z = 1.0
     [[FRSW FR4]]
         0:85 = 1:86
@@ -98,8 +98,8 @@ version = 0.8.7
         0 = FR5 0
         1 = FR6 0
         2 = FR3 0
-        x = -725.535713374
-        y = 98.122366364
+        x = -1098.88809384
+        y = 16.0979797464
         z = 1.0
     [[ROUTER R4]]
         model = 3640
@@ -112,8 +112,8 @@ version = 0.8.7
         f1/0 = SW9_M 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 224.585786438
-        y = -143.372583002
+        x = 206.100505064
+        y = -275.656854249
         z = 1.0
     [[ROUTER R5]]
         model = 3640
@@ -125,8 +125,8 @@ version = 0.8.7
         slot1 = NM-1FE-TX
         f1/0 = SW9_M 3
         slot2 = NM-1FE-TX
-        x = 581.778787338
-        y = -145.024386618
+        x = 644.004184082
+        y = -251.090403796
         z = 1.0
     [[ROUTER R6]]
         model = 3640
@@ -139,8 +139,8 @@ version = 0.8.7
         f1/0 = SW6_E 2
         slot2 = NM-1FE-TX
         f2/0 = SW9_M 1
-        x = 450.889393669
-        y = -275.399061661
+        x = 554.126983722
+        y = -374.394011027
         z = 1.0
     [[ROUTER R7]]
         model = 3640
@@ -152,8 +152,8 @@ version = 0.8.7
         slot1 = NM-1FE-TX
         slot2 = NM-4T
         s2/0 = RB s1/0
-        x = 911.016377391
-        y = 38.2914139228
+        x = 902.531096017
+        y = -250.208152801
         z = 1.0
     [[ROUTER R1]]
         model = 3640
@@ -166,7 +166,7 @@ version = 0.8.7
         slot2 = NM-4T
         s2/0 = FR5 1
         x = -348.443650813
-        y = -47.3948775787
+        y = -115.277128573
         z = 4.0
     [[ROUTER R2]]
         model = 3640
@@ -179,8 +179,8 @@ version = 0.8.7
         f1/0 = R8 f1/0
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = -98.0
-        y = -51.8578643763
+        x = -81.1715728753
+        y = -276.485281374
         z = 1.0
     [[ROUTER R3]]
         model = 3640
@@ -193,8 +193,8 @@ version = 0.8.7
         f1/0 = SW5_F 1
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 213.242640687
-        y = -402.188816818
+        x = 379.242640687
+        y = -376.188816818
         z = 1.0
         hx = 15.7421875
         hy = -25.0
@@ -210,14 +210,14 @@ version = 0.8.7
         slot2 = NM-1FE-TX
         slot3 = NM-4T
         s3/0 = FR2 2
-        x = 63.3279938492
-        y = -54.3330444827
+        x = -89.4070708871
+        y = -116.558441227
         z = 1.0
     [[ETHSW SW5_F]]
         1 = access 1 R3 f1/0
         2 = access 1 R6 f0/0
-        x = 439.675756957
-        y = -390.766594029
+        x = 569.408729652
+        y = -476.89148571
         z = 1.0
     [[ETHSW SW4_A]]
         1 = access 1 R3 f0/0
@@ -225,20 +225,22 @@ version = 0.8.7
         3 = access 1 b3 f0/1
         4 = access 1 b4 f0/1
         5 = access 1 NIO_udp:30000:127.0.0.1:20000
-        x = 204.916305603
-        y = -236.61731573
+        x = 200.916305603
+        y = -360.61731573
         z = 1.0
     [[ETHSW SW7_E]]
         1 = access 1 R5 f0/0
         2 = access 1 R24 f0/1
-        x = 750.802740679
-        y = -160.249783362
+        x = 770.601730552
+        y = -243.688383542
         z = 1.0
+        hx = 17.3526199366
+        hy = -57.5269119346
 [127.0.0.1:7201]
     workingdir = working
     udp = 10101
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
@@ -247,8 +249,8 @@ version = 0.8.7
         2 = access 1 R10 f0/0
         3 = access 1 R9 f0/0
         4 = access 1 R8 f0/0
-        x = 306.739682094
-        y = -32.9705627485
+        x = 185.11731573
+        y = -100.852813742
         z = 1.0
     [[ROUTER R16]]
         model = 3640
@@ -261,8 +263,8 @@ version = 0.8.7
         f1/0 = SW16 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 137.078210487
-        y = 412.735064736
+        x = -112.921789513
+        y = 526.735064736
         z = 1.0
     [[ROUTER R14]]
         model = 3640
@@ -275,8 +277,8 @@ version = 0.8.7
         f1/0 = SW13_C 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 332.107647739
-        y = 270.142135624
+        x = 180.107647739
+        y = 540.142135624
         z = 1.0
     [[ROUTER R12]]
         model = 3640
@@ -289,8 +291,8 @@ version = 0.8.7
         f1/0 = SW11_G 1
         slot2 = NM-1FE-TX
         f2/0 = SW12_H 2
-        x = 565.879292401
-        y = 15.5269119346
+        x = 475.369624409
+        y = -97.6101730552
         z = 1.0
         hx = 8.45252075051
         hy = -33.4852813742
@@ -304,8 +306,8 @@ version = 0.8.7
         slot1 = NM-1FE-TX
         slot2 = NM-4T
         s2/0 = RA s1/0
-        x = 685.394011027
-        y = 163.225396744
+        x = 696.707719526
+        y = 67.0588745026
         z = 1.0
     [[ROUTER R9]]
         model = 3640
@@ -317,14 +319,14 @@ version = 0.8.7
         slot1 = NM-4T
         s1/0 = FR2 3
         slot2 = NM-1FE-TX
-        x = 150.504617358
-        y = 31.9756133823
+        x = 20.3969696197
+        y = 63.0883117545
         z = 1.0
 [127.0.0.1:7206]
     workingdir = working
     udp = 10601
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
@@ -333,8 +335,8 @@ version = 0.8.7
         2 = access 1 R16 f1/0
         3 = access 1 NIO_udp:30005:127.0.0.1:20005
         4 = access 1 NIO_udp:30006:127.0.0.1:20006
-        x = -229.247258045
-        y = 428.063058585
+        x = -561.247258045
+        y = 538.063058585
         z = 1.0
     [[ROUTER R17]]
         model = 3640
@@ -345,8 +347,8 @@ version = 0.8.7
         f0/0 = SW16 1
         slot1 = NM-1FE-TX
         f1/0 = SW15_I 2
-        x = -245.132034356
-        y = 294.783837971
+        x = -553.132034356
+        y = 366.783837971
         z = 1.0
     [[ROUTER R18]]
         model = 3640
@@ -356,20 +358,20 @@ version = 0.8.7
         slot0 = NM-1FE-TX
         f0/0 = SW15_I 1
         slot1 = NM-4T
-        x = -607.170706323
-        y = 293.369624409
+        x = -1003.17070632
+        y = 359.369624409
         z = 1.0
     [[ETHSW SW15_I]]
         1 = access 1 R18 f0/0
         2 = access 1 R17 f1/0
-        x = -428.651370339
-        y = 303.612265096
+        x = -726.651370339
+        y = 371.612265096
         z = 1.0
 [127.0.0.1:7207]
     workingdir = working
     udp = 10701
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
@@ -396,8 +398,8 @@ version = 0.8.7
         f1/0 = SW12_H 1
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 434.364573775
-        y = 43.7695526217
+        x = 335.369624409
+        y = 15.4852813742
         z = 1.0
     [[ROUTER R11]]
         model = 3640
@@ -410,14 +412,14 @@ version = 0.8.7
         f1/0 = R14 f0/0
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 330.759451354
-        y = 159.568542495
+        x = 211.965512115
+        y = 156.74011537
         z = 1.0
 [127.0.0.1:7205]
     workingdir = working
     udp = 10501
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
@@ -426,8 +428,8 @@ version = 0.8.7
         2 = access 1 R14 f1/0
         3 = access 1 R16 f0/0
         4 = access 1 NIO_udp:30003:127.0.0.1:20003
-        x = 137.034054609
-        y = 278.156420973
+        x = -108.965945391
+        y = 358.156420973
         z = 1.0
     [[ROUTER R15]]
         model = 3640
@@ -440,14 +442,14 @@ version = 0.8.7
         s1/0 = FR3 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 139.558441227
-        y = 142.129942316
+        x = -89.5441558774
+        y = 176.071067813
         z = 1.0
 [127.0.0.1:7208]
     workingdir = working
     udp = 10801
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
@@ -455,8 +457,8 @@ version = 0.8.7
     [[ETHSW SW6_E]]
         1 = access 1 R24 f0/0
         2 = access 1 R6 f1/0
-        x = 605.138743755
-        y = -274.801081914
+        x = 735.246391493
+        y = -474.205194209
         z = 1.0
     [[ROUTER b5]]
         model = 3640
@@ -467,8 +469,8 @@ version = 0.8.7
         f0/0 = SW3_A 2
         f0/1 = SW1_A 1
         symbol = ethernet_switch
-        x = -216.847763108
-        y = -228.475180106
+        x = -220.847763108
+        y = -366.475180106
         z = 1.0
     [[ROUTER b1]]
         model = 3640
@@ -479,8 +481,8 @@ version = 0.8.7
         f0/0 = SW1_A 2
         f0/1 = SW2_A 1
         symbol = ethernet_switch
-        x = -344.126983722
-        y = -440.607214462
+        x = -358.126983722
+        y = -560.607214462
         z = 1.0
     [[ROUTER b2]]
         model = 3640
@@ -491,8 +493,8 @@ version = 0.8.7
         f0/0 = SW3_A 1
         f0/1 = SW2_A 2
         symbol = ethernet_switch
-        x = -92.3969696196
-        y = -337.369624409
+        x = -88.3969696196
+        y = -459.369624409
         z = 1.0
     [[ROUTER b3]]
         model = 3640
@@ -503,29 +505,29 @@ version = 0.8.7
         f0/0 = SW2_A 3
         f0/1 = SW4_A 3
         symbol = ethernet_switch
-        x = 60.3380951166
-        y = -333.126983722
+        x = 192.338095117
+        y = -495.126983722
         z = 1.0
     [[ETHSW SW3_A]]
         1 = access 1 b2 f0/0
         2 = access 1 b5 f0/0
         3 = access 1 b4 f0/0
         4 = access 1 R2 f0/0
-        x = -89.2401153701
-        y = -222.475180106
+        x = -91.2401153701
+        y = -362.475180106
         z = 1.0
     [[ETHSW SW8_E]]
         1 = access 1 R24 f0/2
         2 = access 1 R7 f0/0
-        x = 882.32460198
-        y = -277.629509039
+        x = 924.751008851
+        y = -363.896536344
         z = 1.0
     [[ETHSW SW1_A]]
         1 = access 1 b5 f0/1
         2 = access 1 b1 f0/0
         3 = access 1 R1 f0/0
-        x = -345.21277016
-        y = -228.132034356
+        x = -353.21277016
+        y = -362.132034356
         z = 1.0
     [[ROUTER b4]]
         model = 3640
@@ -536,8 +538,8 @@ version = 0.8.7
         f0/0 = SW3_A 3
         f0/1 = SW4_A 4
         symbol = ethernet_switch
-        x = 54.681240867
-        y = -234.132034356
+        x = 62.681240867
+        y = -356.132034356
         z = 1.0
     [[ETHSW SW2_A]]
         1 = access 1 b1 f0/1
@@ -545,7 +547,7 @@ version = 0.8.7
         3 = access 1 b3 f0/0
         4 = access 1 NIO_udp:30004:127.0.0.1:20004
         x = -94.8969696196
-        y = -441.678282274
+        y = -553.678282274
         z = 1.0
     [[ROUTER R24]]
         model = 3640
@@ -557,14 +559,14 @@ version = 0.8.7
         f0/1 = SW7_E 2
         f0/2 = SW8_E 1
         symbol = ethernet_switch
-        x = 756.131167804
-        y = -273.730014102
+        x = 881.996174855
+        y = -494.347329832
         z = 1.0
 [127.0.0.1:7209]
     workingdir = working
     udp = 10901
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
@@ -578,8 +580,8 @@ version = 0.8.7
         f0/0 = RC f0/0
         slot1 = NM-4T
         s1/0 = R7 s2/0
-        x = 809.871283174
-        y = 157.605122421
+        x = 838.155554421
+        y = -3.61522368953
         z = 1.0
     [[ROUTER RA]]
         model = 3640
@@ -590,8 +592,8 @@ version = 0.8.7
         f0/0 = RC f1/0
         slot1 = NM-4T
         s1/0 = R13 s2/0
-        x = 842.398195109
-        y = 344.281312654
+        x = 845.226622234
+        y = 194.374675042
         z = 1.0
     [[ROUTER RC]]
         model = 3640
@@ -602,52 +604,70 @@ version = 0.8.7
         f0/0 = RB f0/0
         slot1 = NM-1FE-TX
         f1/0 = RA f0/0
-        x = 903.20937829
-        y = 249.529003976
+        x = 959.777920785
+        y = 91.1370849902
         z = 1.0
 [GNS3-DATA]
     configs = configs
     workdir = working
-    m11 = 0.707106781187
-    m22 = 0.707106781187
-    [[Cloud B]]
-        symbol = Host
-        x = 275.798556597
-        y = 541.842279199
-        z = 1.0
+    m11 = 0.353553390593
+    m22 = 0.353553390593
     [[Cloud FTPServer]]
         symbol = Host
-        x = 707.133693121
-        y = -98.7964645564
+        x = 1111.59877196
+        y = -95.9680374317
         z = 1.0
         connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
-    [[Cloud Host_A]]
-        symbol = Host
-        x = 466.717387517
-        y = 275.970129472
-        z = 1.0
-        connections = SW12_H:3:nio_tap:tap1
     [[Cloud Host_C]]
         symbol = Host
-        x = 96.1934341757
-        y = -460.835136523
+        x = 194.193434176
+        y = -628.835136523
         z = 1.0
         connections = SW2_A:4:NIO_udp:30004:127.0.0.1:20004
     [[Cloud Host_B]]
         symbol = Host
-        x = -520.403679018
-        y = 408.906204335
+        x = -976.403679018
+        y = 524.906204335
         z = 1.0
         connections = SW16:4:NIO_udp:30006:127.0.0.1:20006
     [[Cloud WebServer]]
         symbol = Host
-        x = 328.124458405
-        y = -251.531529292
+        x = 364.124458405
+        y = -529.531529292
         z = 1.0
         connections = SW4_A:5:NIO_udp:30000:127.0.0.1:20000
     [[Cloud TelServer]]
         symbol = Host
-        x = -49.470562748
-        y = 292.94069222
+        x = -315.470562748
+        y = 428.94069222
         z = 1.0
         connections = SW13_C:4:NIO_udp:30003:127.0.0.1:20003 SW16:3:NIO_udp:30005:127.0.0.1:20005
+    [[Cloud Host_A]]
+        symbol = Host
+        x = 670.364140499
+        y = 205.259451353
+        connections = SW12_H:3:nio_tap:tap1
+    [[SHAPE 1]]
+        type = rectangle
+        x = -1385.92929113
+        y = -158.391918986
+        width = 2633.26565314
+        height = 469.518902708
+        fill_color = "#c82faf"
+        z = -1.0
+    [[SHAPE 2]]
+        type = rectangle
+        x = -653.366665816
+        y = -667.50880144
+        width = 1779.08066147
+        height = 497.803173955
+        fill_color = "#5944cf"
+        z = -1.0
+    [[SHAPE 3]]
+        type = rectangle
+        x = -1146.0
+        y = 322.0
+        width = 1502.0
+        height = 296.0
+        fill_color = "#2f6403"
+        z = -1.0

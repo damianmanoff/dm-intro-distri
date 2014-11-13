@@ -1,2 +1,0 @@
-Nov 10 11:13:10.358 VTTY: Console port: waiting connection on tcp port 2102 for protocol IPv4 (FD 88)
-Nov 10 11:13:10.358 VTTY: AUX port: waiting connection on tcp port 2502 for protocol IPv4 (FD 89)
