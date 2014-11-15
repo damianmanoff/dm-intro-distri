@@ -1,12 +1,5 @@
 !
-!
-!
-!
-!
-!
-!
-!
-!
+
 
 !
 version 12.4
@@ -14,7 +7,7 @@ service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname R14
+hostname R5
 !
 boot-start-marker
 boot-end-marker
@@ -44,14 +37,17 @@ ip cef
 !
 !
 interface FastEthernet0/0
- ip address 10.61.6.226 255.255.255.252
+ ip address 10.61.7.130 255.255.255.192
  duplex auto
  speed auto
 !
 interface FastEthernet1/0
- ip address 10.61.6.130 255.255.255.224
+ ip address 10.61.7.227 255.255.255.224
  duplex auto
  speed auto
+ vrrp 5 ip 10.61.7.227
+ vrrp 5 priority 80
+ vrrp 6 ip 10.61.7.225
 !
 interface FastEthernet2/0
  no ip address
@@ -59,15 +55,10 @@ interface FastEthernet2/0
  duplex auto
  speed auto
 !
-interface FastEthernet3/0
- no ip address
- shutdown
- duplex auto
- speed auto
-!
-router ospf 1
- network 10.61.6.128 0.0.0.31 area 1
- redistribute static
+router rip
+ version 2
+ network 10.61.7.128
+ network 10.61.7.228
 !
 ip http server
 !

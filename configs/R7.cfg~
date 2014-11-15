@@ -1,12 +1,4 @@
 !
-!
-!
-!
-!
-!
-!
-!
-!
 
 !
 version 12.4
@@ -14,7 +6,7 @@ service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname R14
+hostname R7
 !
 boot-start-marker
 boot-end-marker
@@ -44,30 +36,40 @@ ip cef
 !
 !
 interface FastEthernet0/0
- ip address 10.61.6.226 255.255.255.252
+ ip address 10.61.7.129 255.255.255.192
  duplex auto
  speed auto
 !
 interface FastEthernet1/0
- ip address 10.61.6.130 255.255.255.224
- duplex auto
- speed auto
-!
-interface FastEthernet2/0
  no ip address
  shutdown
  duplex auto
  speed auto
 !
-interface FastEthernet3/0
+interface Serial2/0
+ ip address 157.63.5.9 255.255.255.252
+ serial restart-delay 0
+!
+interface Serial2/1
  no ip address
  shutdown
- duplex auto
- speed auto
+ serial restart-delay 0
 !
-router ospf 1
- network 10.61.6.128 0.0.0.31 area 1
+interface Serial2/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+router rip
+ version 2
  redistribute static
+ network 10.0.0.0
+ network 192.168.25.0
 !
 ip http server
 !

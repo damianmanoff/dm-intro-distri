@@ -1,10 +1,11 @@
 autostart = False
+version = 0.8.7
 [127.0.0.1:7200]
     workingdir = working
     udp = 10001
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         chassis = 3640
     [[ETHSW SW10_B]]
@@ -239,8 +240,8 @@ autostart = False
     workingdir = working
     udp = 10101
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         chassis = 3640
     [[ETHSW SW11_G]]
@@ -325,8 +326,8 @@ autostart = False
     workingdir = working
     udp = 10601
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         chassis = 3640
     [[ETHSW SW16]]
@@ -370,8 +371,8 @@ autostart = False
     workingdir = working
     udp = 10701
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -418,8 +419,8 @@ autostart = False
     workingdir = working
     udp = 10501
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         chassis = 3640
     [[ETHSW SW13_C]]
@@ -448,8 +449,8 @@ autostart = False
     workingdir = working
     udp = 10801
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -565,8 +566,8 @@ autostart = False
     workingdir = working
     udp = 10901
     [[3640]]
-        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604ec500
+        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb174
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -609,69 +610,88 @@ autostart = False
 [GNS3-DATA]
     configs = configs
     workdir = working
-    m11 = 0.707106781187
-    m22 = 0.707106781187
+    m11 = 0.5
+    m22 = 0.5
     [[NOTE 1]]
-        text = 10.61.7.130
-        x = 858.493903346
-        y = -293.878246381
-    [[NOTE 2]]
-        text = 10.61.7.131
-        x = 649.493903346
-        y = -319.878246381
-    [[NOTE 3]]
-        text = 10.61.7.194
-        x = 422.493903346
-        y = -420.878246381
-    [[NOTE 4]]
-        text = 10.61.7.193
-        x = 609.493903346
-        y = -403.878246381
-    [[NOTE 5]]
-        text = 10.61.7.225
-        x = 551.493903346
-        y = -297.878246381
-    [[NOTE 6]]
-        text = 10.61.7.226
-        x = 259.493903346
-        y = -209.878246381
-    [[NOTE 7]]
-        text = 10.61.7.227
-        x = 513.493903346
-        y = -205.878246381
-    [[NOTE 8]]
-        text = 10.61.7.130
-        x = 697.493903346
-        y = -241.878246381
-    [[NOTE 9]]
-        text = 192.168.25.4
-        x = 283.493903346
-        y = -349.878246381
-    [[NOTE 10]]
-        text = 192.168.25.5
-        x = 223.493903346
-        y = -282.878246381
-    [[NOTE 11]]
-        text = 192.168.25.2
+        text = "192.168.25.2"
         x = -307.506096654
         y = -281.878246381
-    [[NOTE 12]]
-        text = 192.168.25.3
-        x = -46.5060966544
-        y = -301.878246381
-    [[NOTE 13]]
-        text = 10.61.6.230
-        x = -36.2670273048
-        y = -146.433982822
-    [[NOTE 14]]
-        text = 10.61.6.229
+        color = "#3c3c3c"
+    [[NOTE 2]]
+        text = "192.168.25.4"
+        x = 283.493903346
+        y = -349.878246381
+        color = "#3c3c3c"
+    [[NOTE 3]]
+        text = "10.61.7.130"
+        x = 697.493903346
+        y = -241.878246381
+        color = "#3c3c3c"
+    [[NOTE 4]]
+        text = "10.61.7.225"
+        x = 551.493903346
+        y = -297.878246381
+        color = "#3c3c3c"
+    [[NOTE 5]]
+        text = "10.61.7.193"
+        x = 609.493903346
+        y = -403.878246381
+        color = "#3c3c3c"
+    [[NOTE 6]]
+        text = "10.61.7.227"
+        x = 513.493903346
+        y = -205.878246381
+        color = "#3c3c3c"
+    [[NOTE 7]]
+        text = "10.61.7.226"
+        x = 259.493903346
+        y = -209.878246381
+        color = "#3c3c3c"
+    [[NOTE 8]]
+        text = "10.61.7.130"
+        x = 858.493903346
+        y = -293.878246381
+        color = "#3c3c3c"
+    [[NOTE 9]]
+        text = "10.61.7.194"
+        x = 422.493903346
+        y = -420.878246381
+        color = "#3c3c3c"
+    [[NOTE 10]]
+        text = "10.61.7.131"
+        x = 649.493903346
+        y = -319.878246381
+        color = "#3c3c3c"
+    [[NOTE 11]]
+        text = "10.61.6.229"
         x = -30.6101730553
         y = -233.914213562
+        color = "#3c3c3c"
+    [[NOTE 12]]
+        text = "10.61.6.230"
+        x = -36.2670273048
+        y = -146.433982822
+        color = "#3c3c3c"
+    [[NOTE 13]]
+        text = "192.168.25.3"
+        x = -46.5060966544
+        y = -301.878246381
+        color = "#3c3c3c"
+    [[NOTE 14]]
+        text = "192.168.25.5"
+        x = 223.493903346
+        y = -282.878246381
+        color = "#3c3c3c"
     [[Cloud FTPServer]]
         x = 1111.59877196
         y = -95.9680374317
         z = 1.0
         connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
+    [[Cloud Host_A]]
+        x = 670.364140499
+        y = 205.259451353
+        z = 1.0
+        connections = SW12_H:3:nio_tap:tap1
     [[Cloud Host_C]]
         x = 194.193434176
         y = -628.835136523
@@ -691,18 +711,14 @@ autostart = False
         x = -315.470562748
         y = 428.94069222
         z = 1.0
-        connections = SW16:3:NIO_udp:30005:127.0.0.1:20005 SW13_C:4:NIO_udp:30003:127.0.0.1:20003
-    [[Cloud Host_A]]
-        x = 670.364140499
-        y = 205.259451353
-        connections = SW12_H:3:nio_tap:tap1
+        connections = SW13_C:4:NIO_udp:30003:127.0.0.1:20003 SW16:3:NIO_udp:30005:127.0.0.1:20005
     [[SHAPE 1]]
         type = rectangle
-        x = -1146.0
-        y = 322.0
-        width = 1502.0
-        height = 296.0
-        fill_color = "#2f6403"
+        x = -1385.92929113
+        y = -158.391918986
+        width = 2633.26565314
+        height = 469.518902708
+        fill_color = "#c82faf"
         z = -1.0
     [[SHAPE 2]]
         type = rectangle
@@ -714,11 +730,11 @@ autostart = False
         z = -1.0
     [[SHAPE 3]]
         type = rectangle
-        x = -1385.92929113
-        y = -158.391918986
-        width = 2633.26565314
-        height = 469.518902708
-        fill_color = "#c82faf"
+        x = -1146.0
+        y = 322.0
+        width = 1502.0
+        height = 296.0
+        fill_color = "#2f6403"
         z = -1.0
     [[SHAPE 4]]
         type = rectangle

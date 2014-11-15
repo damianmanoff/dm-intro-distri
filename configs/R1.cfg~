@@ -1,8 +1,5 @@
 !
 !
-
-!
-!
 !
 
 !
@@ -11,7 +8,7 @@ service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname R7
+hostname R1
 !
 boot-start-marker
 boot-end-marker
@@ -41,7 +38,7 @@ ip cef
 !
 !
 interface FastEthernet0/0
- ip address 10.61.7.129 255.255.255.192
+ ip address 192.168.25.2 255.255.255.0
  duplex auto
  speed auto
 !
@@ -52,8 +49,24 @@ interface FastEthernet1/0
  speed auto
 !
 interface Serial2/0
- ip address 157.63.5.9 255.255.255.252
+ no ip address
+ encapsulation frame-relay
  serial restart-delay 0
+ no fair-queue
+ no frame-relay inverse-arp
+ frame-relay lmi-type ansi
+!
+interface Serial2/0.1 point-to-point
+ ip address 10.7.5.65 255.255.255.252
+ frame-relay interface-dlci 18   
+!
+interface Serial2/0.2 point-to-point
+ ip address 10.7.5.69 255.255.255.252
+ frame-relay interface-dlci 19   
+!
+interface Serial2/0.3 point-to-point
+ ip address 10.7.5.73 255.255.255.252
+ frame-relay interface-dlci 115   
 !
 interface Serial2/1
  no ip address
@@ -72,9 +85,10 @@ interface Serial2/3
 !
 router rip
  version 2
- redistribute static
- network 10.61.7.128
- network 157.63.5.8
+ network 10.7.5.64
+ network 10.7.5.68
+ network 10.7.5.72
+ network 192.168.25.0
 !
 ip http server
 !

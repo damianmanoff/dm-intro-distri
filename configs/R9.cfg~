@@ -1,7 +1,5 @@
 !
 !
-!
-!
 
 !
 version 12.4
@@ -9,7 +7,7 @@ service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname R15
+hostname R9
 !
 boot-start-marker
 boot-end-marker
@@ -17,12 +15,9 @@ boot-end-marker
 !
 no aaa new-model
 memory-size iomem 5
-no ip icmp rate-limit unreachable
-ip tcp synwait-time 5
 !
 !
 ip cef
-no ip domain lookup
 !
 !
 !
@@ -42,7 +37,7 @@ no ip domain lookup
 !
 !
 interface FastEthernet0/0
- ip address 10.61.6.132 255.255.255.224
+ ip address 10.111.25.130 255.255.255.128
  duplex auto
  speed auto
 !
@@ -51,19 +46,18 @@ interface Serial1/0
  encapsulation frame-relay
  serial restart-delay 0
  no frame-relay inverse-arp
- frame-relay lmi-type ansi
 !
 interface Serial1/0.1 point-to-point
- ip address 10.7.5.74 255.255.255.252
- frame-relay interface-dlci 151   
+ ip address 10.7.5.70 255.255.255.252
+ frame-relay interface-dlci 91   
 !
 interface Serial1/0.2 point-to-point
- ip address 10.7.5.82 255.255.255.252
- frame-relay interface-dlci 158   
+ ip address 10.7.5.78 255.255.255.252
+ frame-relay interface-dlci 98   
 !
 interface Serial1/0.3 point-to-point
- ip address 10.7.5.86 255.255.255.252
- frame-relay interface-dlci 159   
+ ip address 10.7.5.85 255.255.255.252
+ frame-relay interface-dlci 915   
 !
 interface Serial1/1
  no ip address
@@ -86,25 +80,16 @@ interface FastEthernet2/0
  duplex auto
  speed auto
 !
-interface FastEthernet3/0
- no ip address
- shutdown
- duplex auto
- speed auto
-!
-router ospf 1
- log-adjacency-changes
- redistribute static
- redistribute rip
- network 10.61.6.128 0.0.0.31 area 1
-!
-router rip
- version 2
- redistribute static
- redistribute ospf 1
- network 10.0.0.0
-!
-no ip http server
+ip http server
+ip route 10.61.5.0 255.255.255.0 10.111.25.131
+ip route 10.61.6.128 255.255.255.224 10.111.25.131
+ip route 10.61.6.160 255.255.255.224 10.111.25.131
+ip route 10.61.6.192 255.255.255.240 10.111.25.131
+ip route 10.61.6.208 255.255.255.240 10.111.25.131
+ip route 10.61.6.224 255.255.255.252 10.111.25.131
+ip route 10.111.25.0 255.255.255.128 10.111.25.132
+ip route 157.63.5.8 255.255.255.252 10.7.5.69
+ip route 157.63.5.12 255.255.255.252 10.111.25.131
 !
 !
 !
@@ -122,13 +107,7 @@ control-plane
 !
 !
 line con 0
- exec-timeout 0 0
- privilege level 15
- logging synchronous
 line aux 0
- exec-timeout 0 0
- privilege level 15
- logging synchronous
 line vty 0 4
  login
 !
