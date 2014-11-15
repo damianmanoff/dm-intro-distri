@@ -1,11 +1,10 @@
 autostart = False
-version = 0.8.7
 [127.0.0.1:7200]
     workingdir = working
     udp = 10001
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
     [[ETHSW SW10_B]]
@@ -112,8 +111,8 @@ version = 0.8.7
         f1/0 = SW9_M 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = 193.100505064
-        y = -246.656854249
+        x = 188.857864377
+        y = -233.928932188
         z = 1.0
     [[ROUTER R5]]
         model = 3640
@@ -125,8 +124,8 @@ version = 0.8.7
         slot1 = NM-1FE-TX
         f1/0 = SW9_M 3
         slot2 = NM-1FE-TX
-        x = 627.004184082
-        y = -229.090403796
+        x = 619.93311627
+        y = -230.504617358
         z = 1.0
     [[ROUTER R6]]
         model = 3640
@@ -139,7 +138,7 @@ version = 0.8.7
         f1/0 = SW6_E 2
         slot2 = NM-1FE-TX
         f2/0 = SW9_M 1
-        x = 577.126983722
+        x = 562.984848098
         y = -353.394011027
         z = 1.0
     [[ROUTER R7]]
@@ -225,8 +224,8 @@ version = 0.8.7
         3 = access 1 b3 f0/1
         4 = access 1 b4 f0/1
         5 = access 1 NIO_udp:30000:127.0.0.1:20000
-        x = 188.916305603
-        y = -392.61731573
+        x = 187.502092041
+        y = -371.404112294
         z = 1.0
     [[ETHSW SW7_E]]
         1 = access 1 R5 f0/0
@@ -240,8 +239,8 @@ version = 0.8.7
     workingdir = working
     udp = 10101
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
     [[ETHSW SW11_G]]
@@ -326,8 +325,8 @@ version = 0.8.7
     workingdir = working
     udp = 10601
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
     [[ETHSW SW16]]
@@ -371,8 +370,8 @@ version = 0.8.7
     workingdir = working
     udp = 10701
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -419,8 +418,8 @@ version = 0.8.7
     workingdir = working
     udp = 10501
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         chassis = 3640
     [[ETHSW SW13_C]]
@@ -428,8 +427,8 @@ version = 0.8.7
         2 = access 1 R14 f1/0
         3 = access 1 R16 f0/0
         4 = access 1 NIO_udp:30003:127.0.0.1:20003
-        x = -108.965945391
-        y = 358.156420973
+        x = -106.137518266
+        y = 420.381817717
         z = 1.0
     [[ROUTER R15]]
         model = 3640
@@ -442,15 +441,15 @@ version = 0.8.7
         s1/0 = FR3 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = -89.5441558774
-        y = 176.071067813
+        x = -312.989898732
+        y = 340.119841048
         z = 1.0
 [127.0.0.1:7208]
     workingdir = working
     udp = 10801
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -481,8 +480,8 @@ version = 0.8.7
         f0/0 = SW1_A 2
         f0/1 = SW2_A 1
         symbol = ethernet_switch
-        x = -358.126983722
-        y = -560.607214462
+        x = -349.641702348
+        y = -448.884343035
         z = 1.0
     [[ROUTER b2]]
         model = 3640
@@ -493,8 +492,8 @@ version = 0.8.7
         f0/0 = SW3_A 1
         f0/1 = SW2_A 2
         symbol = ethernet_switch
-        x = -88.3969696196
-        y = -459.369624409
+        x = -94.0538238691
+        y = -439.570634536
         z = 1.0
     [[ROUTER b3]]
         model = 3640
@@ -505,8 +504,8 @@ version = 0.8.7
         f0/0 = SW2_A 3
         f0/1 = SW4_A 3
         symbol = ethernet_switch
-        x = 194.338095117
-        y = -519.126983722
+        x = 180.195959493
+        y = -482.3574311
         z = 1.0
     [[ETHSW SW3_A]]
         1 = access 1 b2 f0/0
@@ -538,16 +537,16 @@ version = 0.8.7
         f0/0 = SW3_A 3
         f0/1 = SW4_A 4
         symbol = ethernet_switch
-        x = 50.681240867
-        y = -449.132034356
+        x = 49.2670273046
+        y = -377.007142675
         z = 1.0
     [[ETHSW SW2_A]]
         1 = access 1 b1 f0/1
         2 = access 1 b2 f0/1
         3 = access 1 b3 f0/0
         4 = access 1 NIO_udp:30004:127.0.0.1:20004
-        x = -94.8969696196
-        y = -553.678282274
+        x = -222.176190233
+        y = -494.281312654
         z = 1.0
     [[ROUTER R24]]
         model = 3640
@@ -566,8 +565,8 @@ version = 0.8.7
     workingdir = working
     udp = 10901
     [[3640]]
-        image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604eb174
+        image = /home/damian/Escritorio/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604ec500
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -610,91 +609,124 @@ version = 0.8.7
 [GNS3-DATA]
     configs = configs
     workdir = working
-    m11 = 0.5
-    m22 = 0.5
+    m11 = 0.707106781188
+    m22 = 0.707106781188
     [[NOTE 1]]
-        text = "192.168.25.2"
+        text = 192.168.25.2
         x = -307.506096654
         y = -281.878246381
-        color = "#3c3c3c"
     [[NOTE 2]]
-        text = "192.168.25.4"
-        x = 283.493903346
-        y = -349.878246381
-        color = "#3c3c3c"
-    [[NOTE 3]]
-        text = "10.61.7.130"
-        x = 697.493903346
-        y = -241.878246381
-        color = "#3c3c3c"
-    [[NOTE 4]]
-        text = "10.61.7.225"
-        x = 551.493903346
-        y = -297.878246381
-        color = "#3c3c3c"
-    [[NOTE 5]]
-        text = "10.61.7.193"
-        x = 609.493903346
-        y = -403.878246381
-        color = "#3c3c3c"
-    [[NOTE 6]]
-        text = "10.61.7.227"
-        x = 513.493903346
-        y = -205.878246381
-        color = "#3c3c3c"
-    [[NOTE 7]]
-        text = "10.61.7.226"
-        x = 259.493903346
-        y = -209.878246381
-        color = "#3c3c3c"
-    [[NOTE 8]]
-        text = "10.61.7.130"
+        text = 10.61.7.130
         x = 858.493903346
         y = -293.878246381
-        color = "#3c3c3c"
-    [[NOTE 9]]
-        text = "10.61.7.194"
+    [[NOTE 3]]
+        text = 10.61.7.194
         x = 422.493903346
         y = -420.878246381
-        color = "#3c3c3c"
-    [[NOTE 10]]
-        text = "10.61.7.131"
-        x = 649.493903346
-        y = -319.878246381
-        color = "#3c3c3c"
-    [[NOTE 11]]
-        text = "10.61.6.229"
-        x = -30.6101730553
-        y = -233.914213562
-        color = "#3c3c3c"
-    [[NOTE 12]]
-        text = "10.61.6.230"
-        x = -36.2670273048
-        y = -146.433982822
-        color = "#3c3c3c"
-    [[NOTE 13]]
-        text = "192.168.25.3"
+    [[NOTE 4]]
+        text = 10.61.7.227
+        x = 513.493903346
+        y = -205.878246381
+    [[NOTE 5]]
+        text = 10.61.7.226
+        x = 259.493903346
+        y = -209.878246381
+    [[NOTE 6]]
+        text = 10.7.5.74
+        x = -411.033621333
+        y = 341.469696196
+    [[NOTE 7]]
+        text = 192.168.25.3
         x = -46.5060966544
         y = -301.878246381
-        color = "#3c3c3c"
-    [[NOTE 14]]
-        text = "192.168.25.5"
-        x = 223.493903346
-        y = -282.878246381
-        color = "#3c3c3c"
+    [[NOTE 8]]
+        text = 10.61.7.131
+        x = 649.493903346
+        y = -319.878246381
+    [[NOTE 9]]
+        text = 10.61.6.229
+        x = -30.6101730553
+        y = -233.914213562
     [[Cloud FTPServer]]
         x = 1111.59877196
         y = -95.9680374317
         z = 1.0
         connections = SW10_B:1:NIO_udp:30002:127.0.0.1:20002
-    [[Cloud Host_A]]
-        x = 670.364140499
-        y = 205.259451353
-        z = 1.0
-        connections = SW12_H:3:nio_tap:tap1
+    [[NOTE 10]]
+        text = 10.61.6.229
+        x = -30.6101730553
+        y = -233.914213562
+    [[NOTE 11]]
+        text = 10.61.7.194
+        x = 422.493903346
+        y = -420.878246381
+    [[NOTE 12]]
+        text = 10.61.7.130
+        x = 858.493903346
+        y = -293.878246381
+    [[NOTE 13]]
+        text = 10.61.7.193
+        x = 609.493903346
+        y = -403.878246381
+    [[NOTE 14]]
+        text = 10.61.7.225
+        x = 551.493903346
+        y = -297.878246381
+    [[NOTE 15]]
+        text = 10.61.7.226
+        x = 259.493903346
+        y = -209.878246381
+    [[NOTE 16]]
+        text = 10.61.7.227
+        x = 513.493903346
+        y = -205.878246381
+    [[NOTE 17]]
+        text = 192.168.25.2
+        x = -307.506096654
+        y = -281.878246381
+    [[NOTE 18]]
+        text = 10.61.7.130
+        x = 697.493903346
+        y = -241.878246381
+    [[NOTE 19]]
+        text = 192.168.25.4
+        x = 283.493903346
+        y = -349.878246381
+    [[NOTE 20]]
+        text = 10.61.7.130
+        x = 697.493903346
+        y = -241.878246381
+    [[NOTE 21]]
+        text = 192.168.25.4
+        x = 283.493903346
+        y = -349.878246381
+    [[NOTE 22]]
+        text = 192.168.25.5
+        x = 223.493903346
+        y = -282.878246381
+    [[NOTE 23]]
+        text = 192.168.25.3
+        x = -46.5060966544
+        y = -301.878246381
+    [[NOTE 24]]
+        text = 10.61.6.230
+        x = -36.2670273048
+        y = -146.433982822
+    [[NOTE 25]]
+        text = 10.61.7.131
+        x = 649.493903346
+        y = -319.878246381
+    [[NOTE 26]]
+        text = 10.61.7.193
+        x = 609.493903346
+        y = -403.878246381
+    [[NOTE 27]]
+        text = 10.61.7.225
+        x = 551.493903346
+        y = -297.878246381
     [[Cloud Host_C]]
-        x = 194.193434176
-        y = -628.835136523
+        x = -628.878859123
+        y = -580.751875402
         z = 1.0
         connections = SW2_A:4:NIO_udp:30004:127.0.0.1:20004
     [[Cloud Host_B]]
@@ -702,31 +734,39 @@ version = 0.8.7
         y = 524.906204335
         z = 1.0
         connections = SW16:4:NIO_udp:30006:127.0.0.1:20006
+    [[NOTE 28]]
+        text = 192.168.25.5
+        x = 223.493903346
+        y = -282.878246381
     [[Cloud WebServer]]
         x = 364.124458405
         y = -529.531529292
         z = 1.0
         connections = SW4_A:5:NIO_udp:30000:127.0.0.1:20000
     [[Cloud TelServer]]
-        x = -315.470562748
-        y = 428.94069222
+        x = -403.151803615
+        y = 431.769119345
         z = 1.0
         connections = SW13_C:4:NIO_udp:30003:127.0.0.1:20003 SW16:3:NIO_udp:30005:127.0.0.1:20005
+    [[Cloud Host_A]]
+        x = 670.364140499
+        y = 205.259451353
+        connections = SW12_H:3:nio_tap:tap1
     [[SHAPE 1]]
         type = rectangle
-        x = -1385.92929113
-        y = -158.391918986
-        width = 2633.26565314
-        height = 469.518902708
-        fill_color = "#c82faf"
+        x = -1148.82842712
+        y = 322.0
+        width = 1502.0
+        height = 296.0
+        fill_color = "#2f6403"
         z = -1.0
     [[SHAPE 2]]
         type = rectangle
-        x = -755.31136265
-        y = -668.801694659
-        width = 1779.08066147
-        height = 497.803173955
-        fill_color = "#5944cf"
+        x = -1331.92929113
+        y = -152.391918986
+        width = 2633.26565314
+        height = 469.518902708
+        fill_color = "#c82faf"
         z = -1.0
     [[SHAPE 3]]
         type = rectangle
@@ -738,12 +778,50 @@ version = 0.8.7
         z = -1.0
     [[SHAPE 4]]
         type = rectangle
+        x = -755.31136265
+        y = -668.801694659
+        width = 1779.08066147
+        height = 497.803173955
+        fill_color = "#5944cf"
+        z = -1.0
+    [[SHAPE 5]]
+        type = rectangle
+        x = -755.31136265
+        y = -668.801694659
+        width = 1779.08066147
+        height = 497.803173955
+        fill_color = "#5944cf"
+        z = -1.0
+    [[SHAPE 6]]
+        type = rectangle
+        x = -1385.92929113
+        y = -158.391918986
+        width = 2633.26565314
+        height = 469.518902708
+        fill_color = "#c82faf"
+        z = -1.0
+    [[SHAPE 7]]
+        type = rectangle
         x = 484.0
         y = -924.0
         width = 1084.0
         height = 248.0
         z = -2.0
-    [[SHAPE 5]]
+    [[SHAPE 8]]
+        type = rectangle
+        x = 484.0
+        y = -924.0
+        width = 1084.0
+        height = 248.0
+        z = -2.0
+    [[SHAPE 9]]
+        type = rectangle
+        x = -172.53405461
+        y = -540.229580827
+        width = 200.0
+        height = 100.0
+        z = -2.0
+    [[SHAPE 10]]
         type = rectangle
         x = -172.53405461
         y = -540.229580827
