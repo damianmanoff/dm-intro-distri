@@ -1,5 +1,4 @@
 !
-
 !
 version 12.4
 service timestamps debug datetime msec
@@ -35,6 +34,10 @@ ip cef
 !
 !
 !
+interface Tunnel30
+ ip address 11.11.11.12 255.0.0.0
+ tunnel source 157.63.5.13
+!
 interface FastEthernet0/0
  ip address 10.61.7.129 255.255.255.192
  duplex auto
@@ -69,9 +72,10 @@ router rip
  version 2
  redistribute static
  network 10.0.0.0
- network 192.168.25.0
+ network 157.63.0.0
 !
 ip http server
+ip route 10.61.7.128 255.255.255.192 Tunnel30 11.11.11.11
 !
 !
 !
