@@ -5,7 +5,7 @@ version = 0.8.7
     udp = 10001
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         chassis = 3640
     [[ETHSW SW10_B]]
@@ -241,7 +241,7 @@ version = 0.8.7
     udp = 10101
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         chassis = 3640
     [[ETHSW SW11_G]]
@@ -263,8 +263,8 @@ version = 0.8.7
         f1/0 = SW16 2
         slot2 = NM-1FE-TX
         slot3 = NM-1FE-TX
-        x = -112.921789513
-        y = 526.735064736
+        x = -114.921789513
+        y = 524.735064736
         z = 1.0
     [[ROUTER R14]]
         model = 3640
@@ -327,7 +327,7 @@ version = 0.8.7
     udp = 10601
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         chassis = 3640
     [[ETHSW SW16]]
@@ -372,7 +372,7 @@ version = 0.8.7
     udp = 10701
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -420,7 +420,7 @@ version = 0.8.7
     udp = 10501
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         chassis = 3640
     [[ETHSW SW13_C]]
@@ -450,7 +450,7 @@ version = 0.8.7
     udp = 10801
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -567,7 +567,7 @@ version = 0.8.7
     udp = 10901
     [[3640]]
         image = /home/joel/Descargas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
-        idlepc = 0x604f1484
+        idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
         chassis = 3640
@@ -610,47 +610,47 @@ version = 0.8.7
 [GNS3-DATA]
     configs = configs
     workdir = working
-    m11 = 0.353553390594
-    m22 = 0.353553390594
+    m11 = 0.500000000001
+    m22 = 0.500000000001
     [[NOTE 1]]
-        text = "192.168.25.3"
-        x = -46.5060966544
-        y = -301.878246381
-        color = "#3c3c3c"
-    [[NOTE 2]]
-        text = "10.61.7.225"
-        x = 551.493903346
-        y = -297.878246381
-        color = "#3c3c3c"
-    [[NOTE 3]]
-        text = "10.61.7.193"
-        x = 609.493903346
-        y = -403.878246381
-        color = "#3c3c3c"
-    [[NOTE 4]]
-        text = "192.168.25.2"
-        x = -307.506096654
-        y = -281.878246381
-        color = "#3c3c3c"
-    [[NOTE 5]]
-        text = "10.61.7.227"
-        x = 513.493903346
-        y = -205.878246381
-        color = "#3c3c3c"
-    [[NOTE 6]]
-        text = "192.168.25.4"
-        x = 283.493903346
-        y = -349.878246381
-        color = "#3c3c3c"
-    [[NOTE 7]]
         text = "10.61.7.130"
         x = 697.493903346
         y = -241.878246381
         color = "#3c3c3c"
-    [[NOTE 8]]
+    [[NOTE 2]]
         text = "10.61.7.130"
-        x = 858.493903346
-        y = -293.878246381
+        x = 697.493903346
+        y = -241.878246381
+        color = "#3c3c3c"
+    [[NOTE 3]]
+        text = "192.168.25.4"
+        x = 283.493903346
+        y = -349.878246381
+        color = "#3c3c3c"
+    [[NOTE 4]]
+        text = "10.61.7.226"
+        x = 259.493903346
+        y = -209.878246381
+        color = "#3c3c3c"
+    [[NOTE 5]]
+        text = "10.61.7.193"
+        x = 609.493903346
+        y = -403.878246381
+        color = "#3c3c3c"
+    [[NOTE 6]]
+        text = "192.168.25.5"
+        x = 223.493903346
+        y = -282.878246381
+        color = "#3c3c3c"
+    [[NOTE 7]]
+        text = "192.168.25.3"
+        x = -46.5060966544
+        y = -301.878246381
+        color = "#3c3c3c"
+    [[NOTE 8]]
+        text = "10.61.6.230"
+        x = -36.2670273048
+        y = -146.433982822
         color = "#3c3c3c"
     [[NOTE 9]]
         text = "10.61.6.229"
@@ -663,89 +663,89 @@ version = 0.8.7
         y = -233.914213562
         color = "#3c3c3c"
     [[NOTE 11]]
+        text = "10.61.7.194"
+        x = 422.493903346
+        y = -420.878246381
+        color = "#3c3c3c"
+    [[NOTE 12]]
         text = "10.61.7.131"
         x = 649.493903346
         y = -319.878246381
         color = "#3c3c3c"
-    [[NOTE 12]]
+    [[NOTE 13]]
         text = "10.61.6.230"
         x = -36.2670273048
         y = -146.433982822
         color = "#3c3c3c"
-    [[NOTE 13]]
-        text = "192.168.25.4"
-        x = 283.493903346
-        y = -349.878246381
-        color = "#3c3c3c"
     [[NOTE 14]]
-        text = "10.61.7.130"
-        x = 697.493903346
-        y = -241.878246381
-        color = "#3c3c3c"
-    [[NOTE 15]]
-        text = "10.61.7.225"
-        x = 551.493903346
-        y = -297.878246381
-        color = "#3c3c3c"
-    [[NOTE 16]]
-        text = "10.61.7.193"
-        x = 609.493903346
-        y = -403.878246381
-        color = "#3c3c3c"
-    [[NOTE 17]]
-        text = "10.61.7.226"
-        x = 259.493903346
-        y = -209.878246381
-        color = "#3c3c3c"
-    [[NOTE 18]]
-        text = "192.168.25.3"
-        x = -46.5060966544
-        y = -301.878246381
-        color = "#3c3c3c"
-    [[NOTE 19]]
-        text = "192.168.25.5"
-        x = 223.493903346
-        y = -282.878246381
-        color = "#3c3c3c"
-    [[NOTE 20]]
         text = "192.168.25.2"
         x = -307.506096654
         y = -281.878246381
         color = "#3c3c3c"
-    [[NOTE 21]]
-        text = "10.61.6.230"
-        x = -36.2670273048
-        y = -146.433982822
-        color = "#3c3c3c"
-    [[NOTE 22]]
-        text = "10.61.7.227"
-        x = 513.493903346
-        y = -205.878246381
-        color = "#3c3c3c"
-    [[NOTE 23]]
-        text = "10.61.7.226"
-        x = 259.493903346
-        y = -209.878246381
-        color = "#3c3c3c"
-    [[NOTE 24]]
-        text = "10.61.7.131"
-        x = 649.493903346
-        y = -319.878246381
-        color = "#3c3c3c"
-    [[NOTE 25]]
+    [[NOTE 15]]
         text = "10.61.7.194"
         x = 422.493903346
         y = -420.878246381
         color = "#3c3c3c"
-    [[NOTE 26]]
+    [[NOTE 16]]
         text = "10.61.7.130"
         x = 858.493903346
         y = -293.878246381
         color = "#3c3c3c"
+    [[NOTE 17]]
+        text = "10.61.7.225"
+        x = 551.493903346
+        y = -297.878246381
+        color = "#3c3c3c"
+    [[NOTE 18]]
+        text = "10.61.7.226"
+        x = 259.493903346
+        y = -209.878246381
+        color = "#3c3c3c"
+    [[NOTE 19]]
+        text = "10.61.7.227"
+        x = 513.493903346
+        y = -205.878246381
+        color = "#3c3c3c"
+    [[NOTE 20]]
+        text = "192.168.25.3"
+        x = -46.5060966544
+        y = -301.878246381
+        color = "#3c3c3c"
+    [[NOTE 21]]
+        text = "192.168.25.4"
+        x = 283.493903346
+        y = -349.878246381
+        color = "#3c3c3c"
+    [[NOTE 22]]
+        text = "192.168.25.2"
+        x = -307.506096654
+        y = -281.878246381
+        color = "#3c3c3c"
+    [[NOTE 23]]
+        text = "10.61.7.227"
+        x = 513.493903346
+        y = -205.878246381
+        color = "#3c3c3c"
+    [[NOTE 24]]
+        text = "10.61.7.130"
+        x = 858.493903346
+        y = -293.878246381
+        color = "#3c3c3c"
+    [[NOTE 25]]
+        text = "10.61.7.131"
+        x = 649.493903346
+        y = -319.878246381
+        color = "#3c3c3c"
+    [[NOTE 26]]
+        text = "10.61.7.225"
+        x = 551.493903346
+        y = -297.878246381
+        color = "#3c3c3c"
     [[NOTE 27]]
-        text = "10.61.7.194"
-        x = 422.493903346
-        y = -420.878246381
+        text = "10.61.7.193"
+        x = 609.493903346
+        y = -403.878246381
         color = "#3c3c3c"
     [[NOTE 28]]
         text = "192.168.25.5"

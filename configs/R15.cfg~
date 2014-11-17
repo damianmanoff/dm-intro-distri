@@ -1,11 +1,5 @@
 !
 !
-!
-!
-!
-!
-!
-!
 
 !
 version 12.4
@@ -99,14 +93,11 @@ interface FastEthernet3/0
 router ospf 1
  log-adjacency-changes
  redistribute static
- redistribute rip
+ redistribute rip subnets
+ network 10.7.5.72 0.0.0.3 area 1
+ network 10.7.5.80 0.0.0.3 area 1
+ network 10.7.5.84 0.0.0.3 area 1
  network 10.61.6.128 0.0.0.31 area 1
-!
-router rip
- version 2
- redistribute static
- redistribute ospf 1
- network 10.0.0.0
 !
 no ip http server
 !
