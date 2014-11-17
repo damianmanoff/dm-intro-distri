@@ -1,4 +1,11 @@
 !
+!
+
+
+!
+!
+!
+!
 
 !
 version 12.4
@@ -62,9 +69,10 @@ interface FastEthernet3/0
 !
 router rip
  version 2
+ network 192.168.25.0
  redistribute static
  network 10.0.0.0
- network 192.168.25.0
+ redistribute rip
 !
 no ip http server
 !
