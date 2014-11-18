@@ -1,0 +1,11 @@
+
+PHISICAL_IP=$1
+
+
+WS_IP=192.168.25.7
+WS_MASK=255.255.255.0
+WS_TAP=tap5
+
+./init webserver $TAP
+
+openvpn --remote $PHISICAL_IP --port 7512 --dev $TAP --ifconfig $IP $MASK 10.134.5.140

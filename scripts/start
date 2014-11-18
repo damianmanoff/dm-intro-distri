@@ -1,0 +1,26 @@
+
+if [ $# -ne 3 ]; then
+	echo "Uso: start.sh <ip> <mask> <broadcast>"
+	exit 0
+fi
+
+IP=$1
+MASK=$2
+BROADCAST=$3
+
+openvpn --mktun --dev tap2
+openvpn --mktun --dev tap3
+openvpn --mktun --dev tap4
+openvpn --mktun --dev tap5
+openvpn --mktun --dev tap6
+openvpn --mktun --dev tap7
+brctl addbr br0
+brctl addbr br0 eth0
+ifconfig tap2 0.0.0.0 promisc up
+ifconfig tap3 0.0.0.0 promisc up
+ifconfig tap4 0.0.0.0 promisc up
+ifconfig tap5 0.0.0.0 promisc up
+ifconfig tap6 0.0.0.0 promisc up
+ifconfig tap7 0.0.0.0 promisc up
+ifconfig eth0 0.0.0.0 promisc up
+ifconfig br0 $IP netmask $MASK broadcast $BROADCAST

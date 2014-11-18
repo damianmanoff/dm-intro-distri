@@ -1,0 +1,9 @@
+openvpn --rmtun --dev tap2
+openvpn --rmtun --dev tap3
+openvpn --rmtun --dev tap4
+openvpn --rmtun --dev tap5
+openvpn --rmtun --dev tap6
+openvpn --rmtun --dev tap7
+
+ifconfig br0 down
+brctl delbr br0

@@ -1,0 +1,11 @@
+
+PHISICAL_IP=$1
+
+
+IP=10.111.25.3
+MASK=255.255.255.128
+TAP=tap7
+
+./init ftpserver $TAP
+
+openvpn --remote $PHISICAL_IP --port 7512 --dev $TAP --ifconfig $IP $MASK 10.134.5.140

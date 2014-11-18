@@ -1,0 +1,11 @@
+
+PHISICAL_IP=$1
+
+
+IP=192.168.25.8
+MASK=255.255.255.0
+TAP=tap4
+
+./init hostC $TAP
+
+openvpn --remote $PHISICAL_IP --port 7512 --dev $TAP --ifconfig $IP $MASK 10.134.5.140
